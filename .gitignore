@@ -1,0 +1,12 @@
+/dist
+/tmp
+/out-dsc
+
+/node_modules
+/.idea
+.project
+.c9
+.vscode/*
+.DS_Store
+npm-debug.log
+/typings
