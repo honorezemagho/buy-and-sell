@@ -1,1 +1,9 @@
-<h1>listings-page works!</h1>
+<!-- Structural directive allow us to change the structure of the HTML on our page, depending on the  underlying data in your Typescript file -->
+
+<div>
+    <div class="content-box" *ngFor="let listing of listings">
+        <a routerLink="/listings/{{ listing.id }}">
+            <h3>{{ listing.name }} - ${{ listing.price }}</h3>
+        </a>
+    </div>
+</div>
