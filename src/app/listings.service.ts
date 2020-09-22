@@ -15,6 +15,6 @@ export class ListingsService {
   ) { }
 
   getListings() : Observable<Listing[]> {
-  	return this.http.get<Listing[]>('http://localhost:8000/api/listings');
+  	return this.http.get<Listing[]>('/api/listings');
   }
 }
