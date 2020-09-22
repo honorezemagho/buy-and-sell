@@ -4,7 +4,6 @@ import {Observable} from 'rxjs';
 import {Listing} from './types';
 
 
-
 const httpOptions = {
   headers: new HttpHeaders({
     'Content-Type': 'application/json',
