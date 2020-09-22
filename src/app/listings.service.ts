@@ -41,4 +41,12 @@ export class ListingsService {
   deleteListing(id: string): Observable<any> {
     return this.http.delete(`/api/listings/${id}/delete`);
   }
+
+  createListing(name: string, description: string, price: number): Observable<Listing>{
+    return this.http.post<Listing>(
+      '/api/listings/create',
+      {name, description, price},
+      httpOptions,
+    )
+  }
 }
